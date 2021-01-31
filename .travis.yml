@@ -4,3 +4,11 @@ node_js:
 before_install:
   - npm i -g lint-md-cli
 script: lint-md markdown/*.md --fix --config config.json
+
+after_script:
+  - cd ./dist
+  - git init
+  - git config user.name Hoarfroster
+  - git config user.email penguin.zhang@qq.com
+  - git add .
+  - git commit -m "Fix Typo"
