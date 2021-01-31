@@ -12,3 +12,4 @@ after_script:
   - git config user.email penguin.zhang@qq.com
   - git add .
   - git commit -m "Fix Typo"
+  - git push --force --quiet "git@github.com:PassionPenguin/lint-md.git" master:master
